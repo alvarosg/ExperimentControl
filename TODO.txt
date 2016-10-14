@@ -1,0 +1,19 @@
+-Read all devices positions (Implement an actual reading when the value is read).
+
+-Add randomize option to variables.
+-Add check box for extra IR blocked single set.
+
+
+
+-Implement LOG and message printing class.
+-Separate number of images for single and for scan.
+-change nm to um
+-External Control
+-Save Scan Parameters
+-Single set save
+-Interface for Spectrometer
+-Information for the scan
+-Polarization/Ellipticity Scans
+-Devices/Uses
+-Implement ionization gauge.
+-Implement class of things to do at the end of the scan of each variable (block IR, single image and unblock).

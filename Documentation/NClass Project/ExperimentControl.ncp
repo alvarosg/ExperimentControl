@@ -1,0 +1,2619 @@
+<Project>
+  <Name>ExperimentControl</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>StagesUses</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>AbstractStageClass</Name>
+        <Access>Public</Access>
+        <Location left="887" top="398" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int stageInfo</Member>
+        <Member type="Field">int pos</Member>
+        <Member type="Method">public void setPosition()</Member>
+        <Member type="Method">public void position()</Member>
+        <Member type="Method">public void home()</Member>
+        <Member type="Method">public void units()</Member>
+        <Member type="Method">public abstract void gotoPosition()</Member>
+        <Member type="Method">public abstract void minPosition()</Member>
+        <Member type="Method">public abstract void maxPosition()</Member>
+        <Member type="Method">public abstract void updatePosition()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TranslationTestStageClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="141" />
+        <Size width="226" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RotationTestStageClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="204" />
+        <Size width="226" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ThorlabsTranslationStageClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="274" />
+        <Size width="226" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ThorlabsRotationStageClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="335" />
+        <Size width="226" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ThorlabsFW102CStageClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="398" />
+        <Size width="226" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SerialFineTranslationStage</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="460" />
+        <Size width="226" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PiezoStageClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="521" />
+        <Size width="226" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PIC843TranslationStageClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="584" />
+        <Size width="226" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AbstractMultiStageClass</Name>
+        <Access>Public</Access>
+        <Location left="755" top="29" />
+        <Size width="193" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int stageInfo</Member>
+        <Member type="Field">int pos</Member>
+        <Member type="Field">int dim</Member>
+        <Member type="Method">public void setPosition()</Member>
+        <Member type="Method">public void setPositionDim()</Member>
+        <Member type="Method">public void position()</Member>
+        <Member type="Method">public void home()</Member>
+        <Member type="Method">public void units()</Member>
+        <Member type="Method">public abstract void gotoPosition()</Member>
+        <Member type="Method">public abstract void minPosition()</Member>
+        <Member type="Method">public abstract void maxPosition()</Member>
+        <Member type="Method">public abstract void updatePosition()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SmarActMultiStageClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="59" />
+        <Size width="226" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Structure">
+        <Name>stageInfo</Name>
+        <Access>Public</Access>
+        <Location left="402" top="566" />
+        <Size width="162" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int name</Member>
+        <Member type="Field">int type</Member>
+        <Member type="Field">int use</Member>
+        <Member type="Field">int serial</Member>
+        <Member type="Field">int extraparam</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageListHandler</Name>
+        <Access>Public</Access>
+        <Location left="70" top="566" />
+        <Size width="162" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int path</Member>
+        <Member type="Field">int stages</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addStage()</Member>
+        <Member type="Method">public void addStageInd()</Member>
+        <Member type="Method">public void removeStageInd()</Member>
+        <Member type="Method">public void editStage()</Member>
+        <Member type="Method">public void getStages()</Member>
+        <Member type="Method">public void getStage()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageTypes</Name>
+        <Access>Public</Access>
+        <Location left="402" top="288" />
+        <Size width="162" height="189" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">readonly int names</Member>
+        <Member type="Field">readonly int strings</Member>
+        <Member type="Field">readonly int units</Member>
+        <Member type="Method">public static void getNameIndex()</Member>
+        <Member type="Method">public static void getIndexName()</Member>
+        <Member type="Method">public static void getNameUnits()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Handles a the configuration for a list of stages saved in a file in a path</Text>
+        <Location left="116" top="436" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Abstract class for a generic stage (translation, rotation, voltage applied,...)</Text>
+        <Location left="709" top="398" />
+        <Size width="160" height="74" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Abstract class for a generic multiple stage (Sometimes more than one stage come together, and need to be handled together)</Text>
+        <Location left="571" top="10" />
+        <Size width="160" height="87" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Information about the stages types, with an identifier, the units the move by, a longer string for the type,...</Text>
+        <Location left="205" top="242" />
+        <Size width="160" height="87" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Information about a particular stage: name for the stage, type, use, serial number, and extra parameter that would depend on the use</Text>
+        <Location left="252" top="745" />
+        <Size width="180" height="100" />
+      </Entity>
+      <Entity type="Class">
+        <Name>AbstractUseClass</Name>
+        <Access>Public</Access>
+        <Location left="887" top="745" />
+        <Size width="162" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int stageInfo</Member>
+        <Member type="Field">int stagesHand</Member>
+        <Member type="Field">int stageController</Member>
+        <Member type="Field">int lastPos</Member>
+        <Member type="Method">public void setPosition()</Member>
+        <Member type="Method">public void position()</Member>
+        <Member type="Method">public void units()</Member>
+        <Member type="Method">public void minPosition()</Member>
+        <Member type="Method">public void maxPosition()</Member>
+        <Member type="Method">public abstract void varPos2stagePos()</Member>
+        <Member type="Method">public abstract void stagePos2varPos()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AbstractUseMultiClass</Name>
+        <Access>Public</Access>
+        <Location left="887" top="1065" />
+        <Size width="162" height="485" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int stageInfo</Member>
+        <Member type="Field">int stagesHand</Member>
+        <Member type="Field">int num</Member>
+        <Member type="Field">int lastPos</Member>
+        <Member type="Field">int singleusecontrollers</Member>
+        <Member type="Method">public void setPosition()</Member>
+        <Member type="Method">public void setPositionDim()</Member>
+        <Member type="Method">public void position()</Member>
+        <Member type="Method">public void positionDim()</Member>
+        <Member type="Method">public void units()</Member>
+        <Member type="Method">public void minPosition()</Member>
+        <Member type="Method">public void minPositionDim()</Member>
+        <Member type="Method">public void maxPosition()</Member>
+        <Member type="Method">public void maxPositionDim()</Member>
+        <Member type="Method">public abstract void varPos2stagePos()</Member>
+        <Member type="Method">public abstract void stagePos2varPos()</Member>
+        <Member type="Method">public abstract void setPositionStages()</Member>
+        <Member type="Method">public abstract void setPositionStagesDim()</Member>
+        <Member type="Method">public abstract void positionStages()</Member>
+        <Member type="Method">public abstract void positionStagesDim()</Member>
+        <Member type="Method">public abstract void minPositionStages()</Member>
+        <Member type="Method">public abstract void minPositionStagesDim()</Member>
+        <Member type="Method">public abstract void maxPositionStages()</Member>
+        <Member type="Method">public abstract void maxPositionStagesDim()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>VoltageDelayUseClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="786" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Positioner3D</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="1435" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PositionDelayUseClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="717" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PolarizationUseClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="924" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>IntensityUseClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="855" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>InOutUseClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="1065" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EllipticityUseClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="996" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DiscretePositionsUseClass</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="1135" />
+        <Size width="186" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DisguiseForMultipleUseAsSingle</Name>
+        <Access>Public</Access>
+        <Location left="1235" top="1201" />
+        <Size width="252" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int dim</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageUses</Name>
+        <Access>Public</Access>
+        <Location left="402" top="911" />
+        <Size width="162" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">readonly int names</Member>
+        <Member type="Field">readonly int strings</Member>
+        <Member type="Field">readonly int units</Member>
+        <Member type="Field">readonly int variable</Member>
+        <Member type="Field">readonly int extraParamInfo</Member>
+        <Member type="Field">readonly int scannable</Member>
+        <Member type="Method">public static void getNameIndex()</Member>
+        <Member type="Method">public static void getIndexName()</Member>
+        <Member type="Method">public static void getNameUnits()</Member>
+        <Member type="Method">public static void getNameExtraParamInfo()</Member>
+        <Member type="Method">public static void getNameScannable()</Member>
+        <Member type="Method">public static void getNameVariable()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Abstract class for a generic use (delay, intensity, polarization,...)</Text>
+        <Location left="709" top="827" />
+        <Size width="160" height="74" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Abstract class for uses that need more than one stage, like a 3D positioner</Text>
+        <Location left="709" top="1227" />
+        <Size width="160" height="74" />
+      </Entity>
+      <Entity type="Class">
+        <Name>HHG1Positioner</Name>
+        <Access>Public</Access>
+        <Location left="1500" top="1388" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>HHG2Positioner</Name>
+        <Access>Public</Access>
+        <Location left="1500" top="1455" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TestPositioner</Name>
+        <Access>Public</Access>
+        <Location left="1500" top="1525" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Information about the uses</Text>
+        <Location left="206" top="972" />
+        <Size width="160" height="50" />
+      </Entity>
+      <Entity type="Class">
+        <Name>StageMovementMixer</Name>
+        <Access>Public</Access>
+        <Location left="102" top="61" />
+        <Size width="162" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public static void MoveExtraStages()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Method that is called every time a stage moves, to induced aditional movements if necessary, i.e. a stage needs to move any time some other stage moves.</Text>
+        <Location left="297" top="28" />
+        <Size width="160" height="127" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Method that is called every time a use moves, to induced aditional movements if necessary. For example, in a polarization scan with a lambda/2, the ellipticity plate lambda/4 needs to move as well to make its axis paralel and preserve the linear polarization</Text>
+        <Location left="265" top="1303" />
+        <Size width="160" height="157" />
+      </Entity>
+      <Entity type="Class">
+        <Name>UseMovementMixer</Name>
+        <Access>Public</Access>
+        <Location left="70" top="1269" />
+        <Size width="162" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public static void MoveExtraStages()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="1" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1210</X>
+          <Y>180</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1076</X>
+          <Y>508</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1077</X>
+          <Y>506</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1210</X>
+          <Y>319</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1076</X>
+          <Y>507</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1210</X>
+          <Y>376</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1078</X>
+          <Y>508</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="5" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1074</X>
+          <Y>506</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="6" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1075</X>
+          <Y>507</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="7" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1210</X>
+          <Y>557</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1074</X>
+          <Y>507</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="8" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1210</X>
+          <Y>628</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1074</X>
+          <Y>507</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="10" second="9">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>981</X>
+          <Y>83</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="12" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="13">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>593</X>
+          <Y>637</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>720</X>
+          <Y>143</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>589</X>
+          <Y>601</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Generalization" first="23" second="19">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1148</X>
+          <Y>748</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1140</X>
+          <Y>807</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="21" second="19">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="25" second="19">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1143</X>
+          <Y>821</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1093</X>
+          <Y>808</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="24" second="19">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1145</X>
+          <Y>830</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1082</X>
+          <Y>808</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="27" second="19">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1210</X>
+          <Y>1014</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1083</X>
+          <Y>808</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="26" second="19">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1142</X>
+          <Y>1014</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1087</X>
+          <Y>808</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="28" second="19">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1080</X>
+          <Y>810</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="29" second="19">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1078</X>
+          <Y>808</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="29" second="20">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1257</X>
+          <Y>1320</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Generalization" first="22" second="20">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="11" second="30">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="19" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>681</X>
+          <Y>762</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>627</X>
+          <Y>664</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="20" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>658</X>
+          <Y>1129</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>613</X>
+          <Y>698</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Generalization" first="33" second="22">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="34" second="22">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1422</X>
+          <Y>1458</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="35" second="22">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="33" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1546</X>
+          <Y>310</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>3</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="34" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1713</X>
+          <Y>1461</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1614</X>
+          <Y>288</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="34" second="10">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1876</X>
+          <Y>1495</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1889</X>
+          <Y>76</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="35" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1824</X>
+          <Y>1549</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>2070</X>
+          <Y>156</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>3</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>AcquisitionDevices</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>AcquisitionDeviceListHandler</Name>
+        <Access>Public</Access>
+        <Location left="430" top="1141" />
+        <Size width="251" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int devices</Member>
+        <Member type="Field">int path</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addDevice()</Member>
+        <Member type="Method">public void addDeviceInd()</Member>
+        <Member type="Method">public void removeDeviceInd()</Member>
+        <Member type="Method">public void editDevice()</Member>
+        <Member type="Method">public void getDevices()</Member>
+        <Member type="Method">public void getDevice()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AbstractAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1211" top="1121" />
+        <Size width="213" height="315" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int deviceInfo</Member>
+        <Member type="Field">int acquisitionDevicesHand</Member>
+        <Member type="Field">int exposure</Member>
+        <Member type="Method">public void acquire()</Member>
+        <Member type="Method">public void getMode()</Member>
+        <Member type="Method">public abstract void initialize()</Member>
+        <Member type="Method">public abstract void resetBuffer()</Member>
+        <Member type="Method">public abstract void acquisition()</Member>
+        <Member type="Method">public abstract void retrieve()</Member>
+        <Member type="Method">public abstract void retreiveReduced()</Member>
+        <Member type="Method">public abstract void setExposure()</Member>
+        <Member type="Method">public abstract void getExposure()</Member>
+        <Member type="Method">public abstract void isStillValid()</Member>
+        <Member type="Method">public abstract void show()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AcquisitionTypes</Name>
+        <Access>Public</Access>
+        <Location left="874" top="830" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">readonly int names</Member>
+        <Member type="Field">readonly int strings</Member>
+        <Member type="Field">readonly int format</Member>
+        <Member type="Field">readonly int mode</Member>
+        <Member type="Field">int extraParamInfo</Member>
+        <Member type="Method">public static void getIndexName()</Member>
+        <Member type="Method">public static void getNameIndex()</Member>
+        <Member type="Method">public static void getNameFormat()</Member>
+        <Member type="Method">public static void getNameMode()</Member>
+        <Member type="Method">public static void getNameExtraParamInfo()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Structure">
+        <Name>device</Name>
+        <Access>Public</Access>
+        <Location left="874" top="1195" />
+        <Size width="162" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int name</Member>
+        <Member type="Field">int type</Member>
+        <Member type="Field">int varname</Member>
+        <Member type="Field">int shots</Member>
+        <Member type="Field">int extraparam</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>ImageAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1531" top="1103" />
+        <Size width="220" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>WebCamAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1890" top="1009" />
+        <Size width="200" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TektronixTDS620AWaveformAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1890" top="1407" />
+        <Size width="356" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TektronixTDS620AAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1531" top="1430" />
+        <Size width="297" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>TektronixTDS620AVoltageAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1890" top="1476" />
+        <Size width="348" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StagesPositionRecorderAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1531" top="1207" />
+        <Size width="308" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PfeifferMaxiGaugeAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1531" top="1276" />
+        <Size width="274" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>OceanOpticsRemoteSpectrometerAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1531" top="1349" />
+        <Size width="368" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BeamProfilerAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1890" top="1068" />
+        <Size width="240" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AVTViewerAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1890" top="1121" />
+        <Size width="211" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AVTBeamProfilerAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="1890" top="1185" />
+        <Size width="245" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CropRectangleHandler</Name>
+        <Access>Public</Access>
+        <Location left="1503" top="846" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BoxesHandler</Name>
+        <Access>Public</Access>
+        <Location left="1689" top="846" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ExtraAcquisition</Name>
+        <Access>Public</Access>
+        <Location left="454" top="792" />
+        <Size width="162" height="94" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public static void AcquireExtra()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Handles a the configuration for a list of acquisition devices saved in a file in a path</Text>
+        <Location left="495" top="1038" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Information about the acquisition devices types, with an identifier, the format, the mode (blockign or not blocking),...</Text>
+        <Location left="885" top="720" />
+        <Size width="160" height="87" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Information about a particular acquisition device: name, type, name for the variable to save, number of shots,... </Text>
+        <Location left="874" top="1383" />
+        <Size width="180" height="100" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Abstract class for a generic acquisition device (image, pressures, voltage,...)</Text>
+        <Location left="1211" top="1482" />
+        <Size width="160" height="74" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Abstract class for image acquisition devices (image, pressures, voltage,...)</Text>
+        <Location left="1361" top="1009" />
+        <Size width="160" height="74" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Rectangle to crop form the images</Text>
+        <Location left="1484" top="744" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>List of boxes to extract information from the images</Text>
+        <Location left="1737" top="744" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Class with a function that is called after the normal aquisition in a given point of a scan, receives as arguments among other things the current iteration and the total number of iterations. It can be used to do things as taking IR blocked reference after each time delay scan in an intensity scan.</Text>
+        <Location left="402" top="665" />
+        <Size width="327" height="97" />
+      </Entity>
+      <Entity type="Class">
+        <Name>SpectrumPlotWindow</Name>
+        <Access>Public</Access>
+        <Location left="2000" top="1349" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="5" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="12" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="13" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1821</X>
+          <Y>1124</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="14" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1865</X>
+          <Y>1196</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="6" second="7">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1865</X>
+          <Y>1428</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1858</X>
+          <Y>1452</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="8" second="7">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1865</X>
+          <Y>1496</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1449</X>
+          <Y>1277</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="9" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1500</X>
+          <Y>1233</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1454</X>
+          <Y>1277</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="10" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1492</X>
+          <Y>1303</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1464</X>
+          <Y>1276</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="11" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1450</X>
+          <Y>1276</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="7" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="0" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="3" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="15">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1602</X>
+          <Y>1076</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="16">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>1724</X>
+          <Y>1078</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="26">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>InterfaceStagesList</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>StageListHandler</Name>
+        <Access>Public</Access>
+        <Location left="566" top="70" />
+        <Size width="162" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int path</Member>
+        <Member type="Field">int stages</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addStage()</Member>
+        <Member type="Method">public void addStageInd()</Member>
+        <Member type="Method">public void removeStageInd()</Member>
+        <Member type="Method">public void editStage()</Member>
+        <Member type="Method">public void getStages()</Member>
+        <Member type="Method">public void getStage()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StagesListWindow</Name>
+        <Access>Public</Access>
+        <Location left="126" top="162" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Structure">
+        <Name>stageInfo</Name>
+        <Access>Public</Access>
+        <Location left="953" top="108" />
+        <Size width="162" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int name</Member>
+        <Member type="Field">int type</Member>
+        <Member type="Field">int use</Member>
+        <Member type="Field">int serial</Member>
+        <Member type="Field">int extraparam</Member>
+      </Entity>
+      <Entity type="Comment">
+        <Text>The stages list window makes use of the stages handler to update the configuration file</Text>
+        <Location left="318" top="69" />
+        <Size width="160" height="75" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>InterfaceAcquisitionList</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Structure">
+        <Name>device</Name>
+        <Access>Public</Access>
+        <Location left="1311" top="654" />
+        <Size width="162" height="162" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int name</Member>
+        <Member type="Field">int type</Member>
+        <Member type="Field">int varname</Member>
+        <Member type="Field">int shots</Member>
+        <Member type="Field">int extraparam</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>AcquisitionDeviceListHandler</Name>
+        <Access>Public</Access>
+        <Location left="895" top="620" />
+        <Size width="251" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int devices</Member>
+        <Member type="Field">int path</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addDevice()</Member>
+        <Member type="Method">public void addDeviceInd()</Member>
+        <Member type="Method">public void removeDeviceInd()</Member>
+        <Member type="Method">public void editDevice()</Member>
+        <Member type="Method">public void getDevices()</Member>
+        <Member type="Method">public void getDevice()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AcquisitionDeviceListWindow</Name>
+        <Access>Public</Access>
+        <Location left="460" top="715" />
+        <Size width="246" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>The acquisition device  list window makes use of the acquisition device list  handler to update the configuration file</Text>
+        <Location left="660" top="541" />
+        <Size width="160" height="95" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="2" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>InterfaceMetadataList</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>MetadataListWindow</Name>
+        <Access>Public</Access>
+        <Location left="178" top="225" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MetadataListHandler</Name>
+        <Access>Public</Access>
+        <Location left="524" top="149" />
+        <Size width="162" height="264" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int fields</Member>
+        <Member type="Field">int path</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addField()</Member>
+        <Member type="Method">public void addFieldInd()</Member>
+        <Member type="Method">public void removeFieldInd()</Member>
+        <Member type="Method">public void editField()</Member>
+        <Member type="Method">public void getFields()</Member>
+        <Member type="Method">public void getField()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Structure">
+        <Name>Field</Name>
+        <Access>Public</Access>
+        <Location left="883" top="200" />
+        <Size width="162" height="111" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int name</Member>
+        <Member type="Field">int varname</Member>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Each field to save consists of a field name, and a name for the variable wher ethe field will be saved</Text>
+        <Location left="931" top="100" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>The metadata list window makes use of the metadata list handle to update the contents of the metadata config file</Text>
+        <Location left="258" top="82" />
+        <Size width="160" height="95" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>MainInterface</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>ExperimentControlWindow</Name>
+        <Access>Public</Access>
+        <Location left="100" top="272" />
+        <Size width="254" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DataLabeler</Name>
+        <Access>Public</Access>
+        <Location left="483" top="175" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AcquisitionDeviceControllerPanel</Name>
+        <Access>Public</Access>
+        <Location left="483" top="272" />
+        <Size width="234" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageControllerPanel</Name>
+        <Access>Public</Access>
+        <Location left="483" top="342" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageListHandler</Name>
+        <Access>Public</Access>
+        <Location left="850" top="342" />
+        <Size width="162" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int path</Member>
+        <Member type="Field">int stages</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addStage()</Member>
+        <Member type="Method">public void addStageInd()</Member>
+        <Member type="Method">public void removeStageInd()</Member>
+        <Member type="Method">public void editStage()</Member>
+        <Member type="Method">public void getStages()</Member>
+        <Member type="Method">public void getStage()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AcquisitionDeviceListHandler</Name>
+        <Access>Public</Access>
+        <Location left="850" top="272" />
+        <Size width="251" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int devices</Member>
+        <Member type="Field">int path</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addDevice()</Member>
+        <Member type="Method">public void addDeviceInd()</Member>
+        <Member type="Method">public void removeDeviceInd()</Member>
+        <Member type="Method">public void editDevice()</Member>
+        <Member type="Method">public void getDevices()</Member>
+        <Member type="Method">public void getDevice()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SetScanPanel</Name>
+        <Access>Public</Access>
+        <Location left="483" top="513" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SaveSinglePanel</Name>
+        <Access>Public</Access>
+        <Location left="483" top="598" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LogCreator</Name>
+        <Access>Public</Access>
+        <Location left="483" top="107" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MessageSystem</Name>
+        <Access>Public</Access>
+        <Location left="483" top="38" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MetadataPanel</Name>
+        <Access>Public</Access>
+        <Location left="483" top="424" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MetadataListHandler</Name>
+        <Access>Public</Access>
+        <Location left="850" top="424" />
+        <Size width="162" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int fields</Member>
+        <Member type="Field">int path</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addField()</Member>
+        <Member type="Method">public void addFieldInd()</Member>
+        <Member type="Method">public void removeFieldInd()</Member>
+        <Member type="Method">public void editField()</Member>
+        <Member type="Method">public void getFields()</Member>
+        <Member type="Method">public void getField()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>At the start of the program, the gobal message system and log system is created. A new data labeler to ensure uniqueness of names is also created.</Text>
+        <Location left="750" top="38" />
+        <Size width="240" height="114" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>The metadata panel is created sinsce the beginning  although is always  kept hidden until it is necessary.</Text>
+        <Location left="1070" top="424" />
+        <Size width="160" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Two different panels are in charge of the devices list and the stages list</Text>
+        <Location left="1125" top="296" />
+        <Size width="160" height="75" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>381</X>
+          <Y>288</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>383</X>
+          <Y>306</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="9">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>295</X>
+          <Y>246</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>367</X>
+          <Y>58</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="8">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>326</X>
+          <Y>244</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>440</X>
+          <Y>123</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>351</X>
+          <Y>224</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>432</X>
+          <Y>196</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>327</X>
+          <Y>352</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>438</X>
+          <Y>536</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>291</X>
+          <Y>620</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="3" second="4">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="5">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="10">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>346</X>
+          <Y>349</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>432</X>
+          <Y>447</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="10" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>InterfaceSetScan</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>SetScanPanel</Name>
+        <Access>Public</Access>
+        <Location left="134" top="247" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AcquisitionDeviceControllerPanel</Name>
+        <Access>Public</Access>
+        <Location left="663" top="193" />
+        <Size width="234" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MetadataPanel</Name>
+        <Access>Public</Access>
+        <Location left="399" top="123" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DataLabeler</Name>
+        <Access>Public</Access>
+        <Location left="399" top="43" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SetScanAcquisitionPanel</Name>
+        <Access>Public</Access>
+        <Location left="399" top="193" />
+        <Size width="203" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SetScanVariablePanel</Name>
+        <Access>Public</Access>
+        <Location left="399" top="314" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageControllerPanel</Name>
+        <Access>Public</Access>
+        <Location left="796" top="273" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ScanPerformer</Name>
+        <Access>Public</Access>
+        <Location left="399" top="483" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DataTaker</Name>
+        <Access>Public</Access>
+        <Location left="663" top="463" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ScanParametersSaver</Name>
+        <Access>Public</Access>
+        <Location left="399" top="585" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ScanVariable</Name>
+        <Access>Public</Access>
+        <Location left="399" top="406" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SetScanVariablePanel</Name>
+        <Access>Public</Access>
+        <Location left="796" top="348" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LivePlotting</Name>
+        <Access>Public</Access>
+        <Location left="663" top="537" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>A data labeler that ensures the uniqueness of the path, and that is commor for the whole program</Text>
+        <Location left="621" top="11" />
+        <Size width="187" height="75" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>The panel which lets the user save extra information about the scan</Text>
+        <Location left="621" top="111" />
+        <Size width="215" height="50" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>The scan performer iterates over all the possible vaiables, and at each iteration lets the data taker take the data, and plots the most updated results</Text>
+        <Location left="868" top="463" />
+        <Size width="160" height="112" />
+      </Entity>
+      <Entity type="Class">
+        <Name>LivePlottingProfile</Name>
+        <Access>Public</Access>
+        <Location left="600" top="627" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LivePlottingBoxes</Name>
+        <Access>Public</Access>
+        <Location left="782" top="627" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>216</X>
+          <Y>204</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>216</X>
+          <Y>153</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>215</X>
+          <Y>157</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="5">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="5" second="6">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>358</X>
+          <Y>222</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>349</X>
+          <Y>510</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="9">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="8">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="5" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>771</X>
+          <Y>381</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="10">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="10">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>333</X>
+          <Y>428</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="12">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Generalization" first="16" second="12">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>660</X>
+          <Y>602</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>660</X>
+          <Y>602</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="17" second="12">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>745</X>
+          <Y>602</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>745</X>
+          <Y>602</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>InterfaceSaveSingle</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>SetScanPanel</Name>
+        <Access>Public</Access>
+        <Location left="154" top="267" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ScanParametersSaver</Name>
+        <Access>Public</Access>
+        <Location left="419" top="488" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AcquisitionDeviceControllerPanel</Name>
+        <Access>Public</Access>
+        <Location left="683" top="213" />
+        <Size width="234" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DataLabeler</Name>
+        <Access>Public</Access>
+        <Location left="419" top="63" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DataTaker</Name>
+        <Access>Public</Access>
+        <Location left="419" top="371" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>SetScanAcquisitionPanel</Name>
+        <Access>Public</Access>
+        <Location left="419" top="213" />
+        <Size width="203" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MetadataPanel</Name>
+        <Access>Public</Access>
+        <Location left="419" top="150" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>236</X>
+          <Y>224</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>236</X>
+          <Y>173</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>235</X>
+          <Y>177</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="5" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>378</X>
+          <Y>242</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="4">
+        <Label>
+        </Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>235</X>
+          <Y>364</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>352</X>
+          <Y>404</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>InterfaceAcquisitionDevicePanel</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>AcquisitionDeviceControllerPanel</Name>
+        <Access>Public</Access>
+        <Location left="119" top="75" />
+        <Size width="234" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AcquisitionDeviceListHandler</Name>
+        <Access>Public</Access>
+        <Location left="486" top="75" />
+        <Size width="251" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int devices</Member>
+        <Member type="Field">int path</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addDevice()</Member>
+        <Member type="Method">public void addDeviceInd()</Member>
+        <Member type="Method">public void removeDeviceInd()</Member>
+        <Member type="Method">public void editDevice()</Member>
+        <Member type="Method">public void getDevices()</Member>
+        <Member type="Method">public void getDevice()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>RemoteDevicePanel</Name>
+        <Access>Public</Access>
+        <Location left="486" top="214" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>LocalDevicePanel</Name>
+        <Access>Public</Access>
+        <Location left="486" top="302" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>ImageAcquisitionDevicePanel</Name>
+        <Access>Public</Access>
+        <Location left="486" top="387" />
+        <Size width="223" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AbstractAcquisitionDevice</Name>
+        <Access>Public</Access>
+        <Location left="820" top="302" />
+        <Size width="213" height="315" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int deviceInfo</Member>
+        <Member type="Field">int acquisitionDevicesHand</Member>
+        <Member type="Field">int exposure</Member>
+        <Member type="Method">public void acquire()</Member>
+        <Member type="Method">public void getMode()</Member>
+        <Member type="Method">public abstract void initialize()</Member>
+        <Member type="Method">public abstract void resetBuffer()</Member>
+        <Member type="Method">public abstract void acquisition()</Member>
+        <Member type="Method">public abstract void retrieve()</Member>
+        <Member type="Method">public abstract void retreiveReduced()</Member>
+        <Member type="Method">public abstract void setExposure()</Member>
+        <Member type="Method">public abstract void getExposure()</Member>
+        <Member type="Method">public abstract void isStillValid()</Member>
+        <Member type="Method">public abstract void show()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CropRectangleWindow</Name>
+        <Access>Public</Access>
+        <Location left="792" top="464" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>BoxesWindow</Name>
+        <Access>Public</Access>
+        <Location left="792" top="545" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Panel for remote devices (includes IP)</Text>
+        <Location left="283" top="150" />
+        <Size width="271" height="50" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>For local devices</Text>
+        <Location left="283" top="256" />
+        <Size width="160" height="50" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>For limage acquisition devices</Text>
+        <Location left="283" top="339" />
+        <Size width="160" height="50" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>429</X>
+          <Y>326</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="0" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="5">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="3" second="5">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>4</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="5">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>693</X>
+          <Y>481</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>0..1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>693</X>
+          <Y>464</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>0..1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>InterfaceStagesListPanel</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>StageListHandler</Name>
+        <Access>Public</Access>
+        <Location left="528" top="78" />
+        <Size width="162" height="264" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int path</Member>
+        <Member type="Field">int stages</Member>
+        <Member type="Method">public void saveToFile()</Member>
+        <Member type="Method">public void loadFromFile()</Member>
+        <Member type="Method">public void addStage()</Member>
+        <Member type="Method">public void addStageInd()</Member>
+        <Member type="Method">public void removeStageInd()</Member>
+        <Member type="Method">public void editStage()</Member>
+        <Member type="Method">public void getStages()</Member>
+        <Member type="Method">public void getStage()</Member>
+        <Member type="Method">public void count()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageControllerPanel</Name>
+        <Access>Public</Access>
+        <Location left="161" top="78" />
+        <Size width="162" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AbstractUseClass</Name>
+        <Access>Public</Access>
+        <Location left="1066" top="287" />
+        <Size width="162" height="281" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int stageInfo</Member>
+        <Member type="Field">int stagesHand</Member>
+        <Member type="Field">int stageController</Member>
+        <Member type="Field">int lastPos</Member>
+        <Member type="Method">public void setPosition()</Member>
+        <Member type="Method">public void position()</Member>
+        <Member type="Method">public void units()</Member>
+        <Member type="Method">public void minPosition()</Member>
+        <Member type="Method">public void maxPosition()</Member>
+        <Member type="Method">public abstract void varPos2stagePos()</Member>
+        <Member type="Method">public abstract void stagePos2varPos()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AbstractStageClass</Name>
+        <Access>Public</Access>
+        <Location left="1066" top="383" />
+        <Size width="162" height="247" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int stageInfo</Member>
+        <Member type="Field">int pos</Member>
+        <Member type="Method">public void setPosition()</Member>
+        <Member type="Method">public void position()</Member>
+        <Member type="Method">public void home()</Member>
+        <Member type="Method">public void units()</Member>
+        <Member type="Method">public abstract void gotoPosition()</Member>
+        <Member type="Method">public abstract void minPosition()</Member>
+        <Member type="Method">public abstract void maxPosition()</Member>
+        <Member type="Method">public abstract void updatePosition()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageVariableControlPanel</Name>
+        <Access>Public</Access>
+        <Location left="425" top="196" />
+        <Size width="209" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageInoutControlPanel</Name>
+        <Access>Public</Access>
+        <Location left="425" top="304" />
+        <Size width="223" height="77" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>StageDiscretePositionsControlPanel</Name>
+        <Access>Public</Access>
+        <Location left="425" top="426" />
+        <Size width="267" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Positioner3DControlPanel</Name>
+        <Access>Public</Access>
+        <Location left="425" top="531" />
+        <Size width="218" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>InOutUsePanel</Name>
+        <Access>Public</Access>
+        <Location left="789" top="304" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>IndividualAxisPanel</Name>
+        <Access>Public</Access>
+        <Location left="789" top="531" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GenericUsePanel</Name>
+        <Access>Public</Access>
+        <Location left="789" top="196" />
+        <Size width="162" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DiscretePositionsUsePanel</Name>
+        <Access>Public</Access>
+        <Location left="761" top="426" />
+        <Size width="194" height="216" />
+        <Collapsed>True</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>DisguiseForMultipleUseAsSingle</Name>
+        <Access>Public</Access>
+        <Location left="965" top="649" />
+        <Size width="252" height="94" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int dim</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>AbstractUseMultiClass</Name>
+        <Access>Public</Access>
+        <Location left="621" top="649" />
+        <Size width="162" height="485" />
+        <Collapsed>True</Collapsed>
+        <Member type="Field">int stageInfo</Member>
+        <Member type="Field">int stagesHand</Member>
+        <Member type="Field">int num</Member>
+        <Member type="Field">int lastPos</Member>
+        <Member type="Field">int singleusecontrollers</Member>
+        <Member type="Method">public void setPosition()</Member>
+        <Member type="Method">public void setPositionDim()</Member>
+        <Member type="Method">public void position()</Member>
+        <Member type="Method">public void positionDim()</Member>
+        <Member type="Method">public void units()</Member>
+        <Member type="Method">public void minPosition()</Member>
+        <Member type="Method">public void minPositionDim()</Member>
+        <Member type="Method">public void maxPosition()</Member>
+        <Member type="Method">public void maxPositionDim()</Member>
+        <Member type="Method">public abstract void varPos2stagePos()</Member>
+        <Member type="Method">public abstract void stagePos2varPos()</Member>
+        <Member type="Method">public abstract void setPositionStages()</Member>
+        <Member type="Method">public abstract void setPositionStagesDim()</Member>
+        <Member type="Method">public abstract void positionStages()</Member>
+        <Member type="Method">public abstract void positionStagesDim()</Member>
+        <Member type="Method">public abstract void minPositionStages()</Member>
+        <Member type="Method">public abstract void minPositionStagesDim()</Member>
+        <Member type="Method">public abstract void maxPositionStages()</Member>
+        <Member type="Method">public abstract void maxPositionStagesDim()</Member>
+        <Modifier>Abstract</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>Generic panel to move in absolute values and in steps</Text>
+        <Location left="877" top="124" />
+        <Size width="160" height="50" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Panel to move a variable in either the phisical unit, or the use unit</Text>
+        <Location left="324" top="142" />
+        <Size width="284" height="50" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Panel to control a spatial three axis positioner</Text>
+        <Location left="273" top="476" />
+        <Size width="284" height="50" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Panel to control a stage that moves to dicrete positiones (as filter wheel)</Text>
+        <Location left="273" top="368" />
+        <Size width="275" height="50" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>Panel to control a basic two position element (like a beam block)</Text>
+        <Location left="256" top="250" />
+        <Size width="275" height="50" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="10" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1041</X>
+          <Y>298</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="10" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>977</X>
+          <Y>219</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>1038</X>
+          <Y>404</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="8" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>1040</X>
+          <Y>328</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="11" second="2">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>980</X>
+          <Y>452</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>980</X>
+          <Y>357</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="12" second="13">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>919</X>
+          <Y>665</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <StartMultiplicity>0..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="9" second="12">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="13">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>545</X>
+          <Y>666</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>3</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="7" second="9">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>3</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="4">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>387</X>
+          <Y>219</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="5">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>393</X>
+          <Y>330</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="6">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>370</X>
+          <Y>447</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="1" second="7">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>353</X>
+          <Y>553</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+        <EndMultiplicity>0..*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="4" second="10">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>2</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="5" second="10">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>825</X>
+          <Y>268</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="5" second="8">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="6" second="10">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>683</X>
+          <Y>399</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>730</X>
+          <Y>292</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="6" second="11">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
